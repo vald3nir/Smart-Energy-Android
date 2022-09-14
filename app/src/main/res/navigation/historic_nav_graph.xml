@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/historic_nav_graph.xml"
+    app:startDestination="@id/historicMenuFragment">
+
+    <fragment
+        android:id="@+id/historicMenuFragment"
+        android:name="com.vald3nir.smart_energy.presentation.historic.fragments.HistoricMenuFragment"
+        android:label="fragment_historic"
+        tools:layout="@layout/fragment_menu_historic">
+        <action
+            android:id="@+id/action_move_to_consumptionLastHoursFragment"
+            app:destination="@id/consumptionLastHoursFragment" />
+        <action
+            android:id="@+id/action_move_to_consumptionLastDaysFragment"
+            app:destination="@id/consumptionLastDaysFragment" />
+        <action
+            android:id="@+id/action_move_to_consumptionLastMonthsDaysFragment"
+            app:destination="@id/consumptionLastMonthsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/consumptionLastHoursFragment"
+        android:name="com.vald3nir.smart_energy.presentation.historic.fragments.ConsumptionLastHoursFragment"
+        android:label="fragment_consumption_last_hours"
+        tools:layout="@layout/fragment_consumption" />
+
+    <fragment
+        android:id="@+id/consumptionLastDaysFragment"
+        android:name="com.vald3nir.smart_energy.presentation.historic.fragments.ConsumptionLastDaysFragment"
+        android:label="fragment_consumption_last_hours"
+        tools:layout="@layout/fragment_consumption" />
+
+    <fragment
+        android:id="@+id/consumptionLastMonthsFragment"
+        android:name="com.vald3nir.smart_energy.presentation.historic.fragments.ConsumptionLastMonthsFragment"
+        android:label="fragment_consumption_last_hours"
+        tools:layout="@layout/fragment_consumption" />
+
+</navigation>

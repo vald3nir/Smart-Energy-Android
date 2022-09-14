@@ -1,0 +1,102 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.firebase.appdistribution'
+    id 'com.google.gms.google-services'
+    id 'kotlin-kapt'
+    id 'kotlinx-serialization'
+    id 'com.google.dagger.hilt.android'
+}
+
+android {
+    namespace 'com.vald3nir.smart_energy'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.vald3nir.smart_energy"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    // Android Libraries
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Google Login
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+
+    // Kotlin Serialization
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
+    // A Retrofit 2 Converter.Factory for Kotlin serialization.
+    implementation "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0"
+    // Square’s meticulous HTTP client for the JVM, Android, and GraalVM.
+    implementation "com.squareup.okhttp3:okhttp:4.11.0"
+    // An OkHttp interceptor which logs HTTP request and response data.
+    implementation "com.squareup.okhttp3:logging-interceptor:4.11.0"
+
+    // Charts
+    implementation 'ir.mahozad.android:pie-chart:0.7.0' // remover
+    implementation 'com.github.anastr:speedviewlib:1.6.1'  // dashboard
+    implementation 'com.androidplot:androidplot-core:1.5.10'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0' //remover
+    implementation 'com.github.AAChartModel:AAChartCore-Kotlin:7.2.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.1.1'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+
+    // Room Database
+    def roomVersion = "2.5.2"
+    implementation("androidx.room:room-runtime:$roomVersion")
+    kapt("androidx.room:room-compiler:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion")
+
+    // Hilt dependencies
+    implementation 'com.google.dagger:hilt-android:2.47'
+    kapt 'com.google.dagger:hilt-compiler:2.47'
+
+    // Modules
+    implementation project(path: ':toolkit:core-repository')
+    implementation project(path: ':toolkit:core-ui')
+
+    // Tests
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+
+kapt {
+    correctErrorTypes true
+}
+
+hilt {
+    enableExperimentalClasspathAggregation = true
+    enableTransformForLocalTests = true
+    enableAggregatingTask = true
+}
