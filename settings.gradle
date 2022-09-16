@@ -14,3 +14,13 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Smart Energy"
 include ':app'
+
+include ':features:login'
+include ':features:dashboard'
+
+include ':base-ui'
+include ':base-repository'
+
+include ':toolkit:core-ui'
+include ':toolkit:core-repository'
+include ':toolkit:core-utils'
