@@ -77,6 +77,9 @@ dependencies {
     kapt("androidx.room:room-compiler:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
 
+    // MongoDB Kotlin driver dependency
+    implementation("org.mongodb:mongodb-driver-kotlin-coroutine:4.10.1")
+
     // Hilt dependencies
     implementation 'com.google.dagger:hilt-android:2.47'
     kapt 'com.google.dagger:hilt-compiler:2.47'
