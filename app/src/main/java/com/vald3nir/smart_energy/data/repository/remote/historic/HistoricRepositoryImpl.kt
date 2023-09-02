@@ -1,7 +1,7 @@
 package com.vald3nir.smart_energy.data.repository.remote.historic
 
-import com.vald3nir.core_repository.firebase.FirebaseDB
-import com.vald3nir.core_repository.firebase.FirebaseDB.parseStringListToObjects
+import com.vald3nir.firebase_helpers.FirebaseDB
+import com.vald3nir.firebase_helpers.FirebaseDB.parseStringListToObjects
 import com.vald3nir.smart_energy.data.database.daos.HistoricDAO
 import com.vald3nir.smart_energy.data.dtos.HistoricDTO
 import com.vald3nir.smart_energy.domain.mappers.asDTO
@@ -19,7 +19,7 @@ class HistoricRepositoryImpl @Inject constructor(
         onError: ((Exception?) -> Unit)?
     ) {
         val key = email.parseEmailToKey()
-        FirebaseDB.readList(
+        com.vald3nir.firebase_helpers.FirebaseDB.readList(
             path = "/release/historic/${key}",
             onError = onError,
             onSuccess = {

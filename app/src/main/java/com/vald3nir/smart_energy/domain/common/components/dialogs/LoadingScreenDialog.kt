@@ -6,9 +6,9 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.animation.AnimationUtils
-import com.vald3nir.core_ui.components.atoms.CustomImageView
 import com.vald3nir.smart_energy.R
 import com.vald3nir.smart_energy.databinding.ComponentLoadingScreenBinding
+import com.vald3nir.ui.components.atoms.CustomImageView
 
 class LoadingScreenDialog(context: Context) : Dialog(context, R.style.full_screen_dialog) {
 

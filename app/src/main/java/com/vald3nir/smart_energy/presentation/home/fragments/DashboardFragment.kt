@@ -8,8 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bumptech.glide.request.RequestOptions
-import com.vald3nir.core_ui.components.CustomDifferAdapter
-import com.vald3nir.core_ui.extensions.setupDefaultLayoutManager
+import com.vald3nir.extensions.views.setupDefaultLayoutManager
 import com.vald3nir.smart_energy.R
 import com.vald3nir.smart_energy.data.dtos.SensorDTO
 import com.vald3nir.smart_energy.databinding.FragmentDashboardBinding
@@ -22,6 +21,7 @@ import com.vald3nir.smart_energy.presentation.home.extensions.bind
 import com.vald3nir.smart_energy.presentation.home.extensions.sensorsDiffUtil
 import com.vald3nir.smart_energy.presentation.home.extensions.updateIndicator
 import com.vald3nir.smart_energy.presentation.onboarding.redirectToOnboarding
+import com.vald3nir.ui.components.adapters.CustomDifferAdapter
 
 class DashboardFragment : BaseFragment() {
 

@@ -1,9 +1,14 @@
 package com.vald3nir.smart_energy.domain.common.view
 
-import com.vald3nir.core_repository.auth.googleSignIn
-import com.vald3nir.core_ui.CoreFragment
+import com.vald3nir.auth.google.googleSignIn
+import com.vald3nir.ui.base_views.CoreFragment
 
 abstract class BaseFragment : CoreFragment() {
+
+    fun requireCoreActivity() = requireActivity()
+
+    fun showMessage(msg: String?) {}
+    fun showError(e: Exception?) {}
 
     fun getBaseActivity(): BaseActivity? {
         return activity as? BaseActivity

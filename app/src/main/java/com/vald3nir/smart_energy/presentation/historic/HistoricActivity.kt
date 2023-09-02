@@ -3,7 +3,7 @@ package com.vald3nir.smart_energy.presentation.historic
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import com.vald3nir.core_ui.extensions.views.parcelable
+import com.vald3nir.extensions.parcelable
 import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
 import com.vald3nir.smart_energy.databinding.ActivityHistoricBinding
 import com.vald3nir.smart_energy.domain.common.view.BaseActivity

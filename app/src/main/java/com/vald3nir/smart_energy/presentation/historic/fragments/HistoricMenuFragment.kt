@@ -5,8 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import com.vald3nir.core_ui.components.CustomDifferAdapter
-import com.vald3nir.core_ui.extensions.setupDefaultLayoutManager
+import com.vald3nir.extensions.views.setupDefaultLayoutManager
 import com.vald3nir.smart_energy.data.dtos.ItemMenuEnum
 import com.vald3nir.smart_energy.databinding.FragmentMenuHistoricBinding
 import com.vald3nir.smart_energy.databinding.ItemViewMenuHistoricBinding
@@ -15,6 +14,7 @@ import com.vald3nir.smart_energy.presentation.historic.HistoricViewModel
 import com.vald3nir.smart_energy.presentation.historic.extensions.bindItem
 import com.vald3nir.smart_energy.presentation.historic.extensions.historicItemMenuDiffUtil
 import com.vald3nir.smart_energy.presentation.historic.getUserLogged
+import com.vald3nir.ui.components.adapters.CustomDifferAdapter
 
 class HistoricMenuFragment : BaseFragment() {
 
@@ -109,7 +109,7 @@ class HistoricMenuFragment : BaseFragment() {
             onSuccess = { showLoading(false) },
             onError = {
                 showLoading(false)
-                showMessage(it)
+                showError(it)
             }
         )
     }

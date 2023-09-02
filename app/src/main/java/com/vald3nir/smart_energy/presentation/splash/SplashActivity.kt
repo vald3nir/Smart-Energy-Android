@@ -8,11 +8,10 @@ import com.vald3nir.smart_energy.presentation.home.redirectToHome
 import com.vald3nir.smart_energy.presentation.onboarding.redirectToOnboarding
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class SplashActivity : BaseActivity() {
 
-    private val viewModel: SplashViewModel by viewModels()
+//    private val viewModel: SplashViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,20 +22,20 @@ class SplashActivity : BaseActivity() {
     override fun onResume() {
         super.onResume()
         showLoading(true)
-        viewModel.checkUserLogged(
-            activity = this,
-            onSuccess = { updateContract() },
-            onError = { redirectToOnboarding() })
+//        viewModel.checkUserLogged(
+//            activity = this,
+//            onSuccess = { updateContract() },
+//            onError = { redirectToOnboarding() })
     }
 
-    private fun updateContract() {
-        viewModel.checkDatabase(
-            onSuccess = {
-                redirectToHome()
-            },
-            onError = {
-                showMessage(it?.message)
-            }
-        )
-    }
+//    private fun updateContract() {
+//        viewModel.checkDatabase(
+//            onSuccess = {
+//                redirectToHome()
+//            },
+//            onError = {
+//                showMessage(it?.message)
+//            }
+//        )
+//    }
 }

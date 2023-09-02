@@ -1,8 +1,8 @@
 package com.vald3nir.smart_energy.data.repository.remote.auth
 
 import android.app.Activity
-import com.vald3nir.core_repository.auth.getGoogleUserLogger
-import com.vald3nir.core_repository.auth.googleSignIn
+import com.vald3nir.auth.google.getGoogleUserLogger
+import com.vald3nir.auth.google.googleSignIn
 import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
 import javax.inject.Inject
 

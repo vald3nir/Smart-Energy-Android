@@ -1,7 +1,7 @@
 package com.vald3nir.smart_energy.data.repository.remote.contract
 
-import com.vald3nir.core_repository.firebase.FirebaseDB
-import com.vald3nir.core_repository.firebase.FirebaseDB.parseStringToObject
+import com.vald3nir.firebase_helpers.FirebaseDB
+import com.vald3nir.firebase_helpers.FirebaseDB.parseStringToObject
 import com.vald3nir.smart_energy.data.database.daos.ContractDAO
 import com.vald3nir.smart_energy.data.dtos.ContractDTO
 import com.vald3nir.smart_energy.domain.mappers.asDTO
@@ -20,7 +20,7 @@ class ContractRepositoryImpl @Inject constructor(
         onError: ((Exception?) -> Unit)?
     ) {
         val key = email.parseEmailToKey()
-        FirebaseDB.readObject(
+        com.vald3nir.firebase_helpers.FirebaseDB.readObject(
             path = "/release/contract/${key}",
             onError = onError,
             onSuccess = {

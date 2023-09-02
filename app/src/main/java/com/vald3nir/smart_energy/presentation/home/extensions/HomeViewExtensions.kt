@@ -2,9 +2,9 @@ package com.vald3nir.smart_energy.presentation.home.extensions
 
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
-import com.vald3nir.core_ui.extensions.views.formatStringResources
-import com.vald3nir.core_ui.extensions.views.setTextColorTo
-import com.vald3nir.core_ui.utils.toIntOrZero
+import com.vald3nir.extensions.toIntOrZero
+import com.vald3nir.extensions.views.formatStringResources
+import com.vald3nir.extensions.views.setTextColorTo
 import com.vald3nir.smart_energy.R
 import com.vald3nir.smart_energy.data.dtos.DashboardDTO
 import com.vald3nir.smart_energy.data.dtos.SensorDTO

@@ -47,14 +47,16 @@ dependencies {
     // Android Libraries
     implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.annotation:annotation:1.6.0'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-    // Google Login
-    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
 
     // Kotlin Serialization
-    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0'
     // A Retrofit 2 Converter.Factory for Kotlin serialization.
     implementation "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0"
     // Square’s meticulous HTTP client for the JVM, Android, and GraalVM.
@@ -77,16 +79,24 @@ dependencies {
     kapt("androidx.room:room-compiler:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
 
-    // MongoDB Kotlin driver dependency
-    implementation("org.mongodb:mongodb-driver-kotlin-coroutine:4.10.1")
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     // Hilt dependencies
-    implementation 'com.google.dagger:hilt-android:2.47'
-    kapt 'com.google.dagger:hilt-compiler:2.47'
+    implementation 'com.google.dagger:hilt-android:2.48'
+    kapt 'com.google.dagger:hilt-compiler:2.48'
+
+    // Android Navigator
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.1")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.1")
 
     // Modules
-    implementation project(path: ':toolkit:core-repository')
-    implementation project(path: ':toolkit:core-ui')
+    implementation project(path: ':toolkit:auth')
+    implementation project(path: ':toolkit:extensions')
+    implementation project(path: ':toolkit:repository:firebase')
+    implementation project(path: ':toolkit:repository:iot')
+    implementation project(path: ':toolkit:ui')
 
     // Tests
     testImplementation 'junit:junit:4.13.2'

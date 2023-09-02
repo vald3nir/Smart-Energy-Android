@@ -1,7 +1,7 @@
 package com.vald3nir.smart_energy.data.repository.remote.sensors
 
-import com.vald3nir.core_repository.firebase.FirebaseDB
-import com.vald3nir.core_repository.firebase.FirebaseDB.parseStringListToObjects
+import com.vald3nir.firebase_helpers.FirebaseDB
+import com.vald3nir.firebase_helpers.FirebaseDB.parseStringListToObjects
 import com.vald3nir.smart_energy.data.database.daos.SensorDAO
 import com.vald3nir.smart_energy.data.dtos.ContractDTO
 import com.vald3nir.smart_energy.data.dtos.SensorDTO
@@ -21,7 +21,7 @@ class SensorsRepositoryImpl @Inject constructor(
         onSuccess: (List<SensorDTO?>) -> Unit,
         onError: ((Exception?) -> Unit)?
     ) {
-        FirebaseDB.readList(
+        com.vald3nir.firebase_helpers.FirebaseDB.readList(
             path = "/release/sensor",
             onError = onError,
             onSuccess = {
