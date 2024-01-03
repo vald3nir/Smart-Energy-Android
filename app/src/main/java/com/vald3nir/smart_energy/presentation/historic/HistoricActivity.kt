@@ -3,8 +3,9 @@ package com.vald3nir.smart_energy.presentation.historic
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import com.vald3nir.core_ui.extensions.views.parcelable
-import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
+import androidx.lifecycle.ViewModelProvider
+import com.vald3nir.auth.google.GoogleUserDTO
+import com.vald3nir.core.extensions.parcelable
 import com.vald3nir.smart_energy.databinding.ActivityHistoricBinding
 import com.vald3nir.smart_energy.domain.common.view.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
@@ -15,6 +16,8 @@ class HistoricActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityHistoricBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val viewModel = ViewModelProvider(this)[HistoricViewModel::class.java]
+        setupUIStateObserver(viewModel)
     }
 }
 

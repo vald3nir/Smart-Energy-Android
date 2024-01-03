@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.vald3nir.core_ui.components.atoms.CustomImageView
+        <com.vald3nir.core.presentation.components.atoms.CustomImageView
             android:id="@+id/iv_user_profile"
             android:layout_width="25dp"
             android:layout_height="30dp"

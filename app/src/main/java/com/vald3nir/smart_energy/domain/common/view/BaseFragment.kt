@@ -1,20 +1,18 @@
 package com.vald3nir.smart_energy.domain.common.view
 
-import com.vald3nir.core_repository.auth.googleSignIn
-import com.vald3nir.core_ui.CoreFragment
+import androidx.annotation.LayoutRes
+import com.vald3nir.auth.google.GoogleSign
+import com.vald3nir.core.presentation.CoreFragment
 
-abstract class BaseFragment : CoreFragment() {
+abstract class BaseFragment(@LayoutRes contentLayoutID: Int) : CoreFragment(contentLayoutID) {
 
     fun getBaseActivity(): BaseActivity? {
         return activity as? BaseActivity
     }
 
-    fun showLoading(show: Boolean) {
-        (activity as? BaseActivity)?.showLoading(show)
-    }
 
     fun callGoogleSignIn() {
-        activity?.googleSignIn()
+        GoogleSign.googleAuthenticate(activity)
     }
 
     override fun onStop() {

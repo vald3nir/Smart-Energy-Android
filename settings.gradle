@@ -18,5 +18,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Smart Energy"
 include ':app'
-include ':toolkit:core-ui'
-include ':toolkit:core-repository'
+include ':toolkit:auth'
+include ':toolkit:core'
+include ':toolkit:repository:firebase'
+include ':toolkit:repository:iot'

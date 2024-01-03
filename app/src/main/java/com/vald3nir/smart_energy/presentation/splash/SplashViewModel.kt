@@ -2,7 +2,7 @@ package com.vald3nir.smart_energy.presentation.splash
 
 import android.app.Activity
 import androidx.lifecycle.viewModelScope
-import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
+import com.vald3nir.auth.google.GoogleUserDTO
 import com.vald3nir.smart_energy.domain.common.view.BaseViewModel
 import com.vald3nir.smart_energy.domain.use_cases.auth.AuthUseCase
 import com.vald3nir.smart_energy.domain.use_cases.contract.ContractUseCase

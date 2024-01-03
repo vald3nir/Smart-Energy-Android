@@ -9,7 +9,7 @@
     android:orientation="vertical"
     tools:context=".presentation.historic.fragments.HistoricMenuFragment">
 
-    <com.vald3nir.core_ui.components.CustomNavigationComponent
+    <com.vald3nir.core.presentation.components.molecules.CustomNavigationComponent
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

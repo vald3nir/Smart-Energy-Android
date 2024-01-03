@@ -1,7 +1,7 @@
 package com.vald3nir.smart_energy.data.repository.remote.dashboard
 
 import com.google.gson.Gson
-import com.vald3nir.core_repository.iot.MQTTClient
+import com.vald3nir.iot.mqtt.MQTTClient
 import com.vald3nir.smart_energy.data.dtos.DashboardDTO
 import javax.inject.Inject
 

@@ -5,9 +5,9 @@ import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import com.vald3nir.auth.google.GoogleUserDTO
 import com.vald3nir.smart_energy.data.dtos.AppPreferencesDTO
 import com.vald3nir.smart_energy.data.dtos.DashboardDTO
-import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
 import com.vald3nir.smart_energy.data.dtos.SensorDTO
 import com.vald3nir.smart_energy.domain.common.view.BaseViewModel
 import com.vald3nir.smart_energy.domain.use_cases.app_preferences.AppPreferencesUseCase

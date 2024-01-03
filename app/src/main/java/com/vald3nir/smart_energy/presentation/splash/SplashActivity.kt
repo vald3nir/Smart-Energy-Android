@@ -2,6 +2,7 @@ package com.vald3nir.smart_energy.presentation.splash
 
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.lifecycle.ViewModelProvider
 import com.vald3nir.smart_energy.databinding.ActivityEmptyBinding
 import com.vald3nir.smart_energy.domain.common.view.BaseActivity
 import com.vald3nir.smart_energy.presentation.home.redirectToHome
@@ -18,6 +19,7 @@ class SplashActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityEmptyBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setupUIStateObserver(viewModel)
     }
 
     override fun onResume() {

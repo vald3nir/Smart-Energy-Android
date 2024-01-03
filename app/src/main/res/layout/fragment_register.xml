@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/main_color">
 
-    <com.vald3nir.core_ui.components.CustomNavigationComponent
+    <com.vald3nir.core.presentation.components.molecules.CustomNavigationComponent
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"

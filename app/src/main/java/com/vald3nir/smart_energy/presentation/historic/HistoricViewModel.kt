@@ -1,10 +1,10 @@
 package com.vald3nir.smart_energy.presentation.historic
 
 import androidx.lifecycle.viewModelScope
+import com.vald3nir.auth.google.GoogleUserDTO
 import com.vald3nir.smart_energy.R
 import com.vald3nir.smart_energy.data.dtos.ChartDTO
 import com.vald3nir.smart_energy.data.dtos.DataChartDTO
-import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
 import com.vald3nir.smart_energy.data.dtos.HistoricDTO
 import com.vald3nir.smart_energy.data.dtos.HistoricItemMenuDTO
 import com.vald3nir.smart_energy.data.dtos.ItemMenuEnum

@@ -1,24 +1,48 @@
 package com.vald3nir.smart_energy.domain.common.view
 
-import com.vald3nir.core_ui.CoreActivity
-import com.vald3nir.smart_energy.domain.common.components.dialogs.LoadingScreenDialog
+import android.widget.Toast
+import com.vald3nir.core.presentation.CoreActivity
+import com.vald3nir.core.presentation.animations.TypeAnimation
+import com.vald3nir.core.presentation.components.screens.LoadingScreenDialog
+import com.vald3nir.smart_energy.R
 
 open class BaseActivity : CoreActivity() {
 
-    private var loading: LoadingScreenDialog? = null
+    private var loadingScreenDialog: LoadingScreenDialog? = null
 
-    fun showLoading(show: Boolean) {
-        if (show) {
-            loading = LoadingScreenDialog(this)
-            loading?.show()
-        } else {
-            loading?.dismiss()
+    override fun showError(e: Exception?) {
+        showLoading(false)
+        e?.let {
+            it.printStackTrace()
+            showMessage(it.message)
         }
     }
 
+    override fun showMessage(msg: String?) {
+        showLoading(false)
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun showLoading(show: Boolean) {
+        postSimpleDelayed(delayMillis = 1000, callback = {
+            loadingScreenDialog?.dismiss()
+            if (show) {
+                loadingScreenDialog =
+                    LoadingScreenDialog(
+                        context = this,
+                        title = getString(R.string.loading),
+                        icon = R.drawable.ic_logo,
+                        typeAnimation = TypeAnimation.ROTATION
+                    )
+                loadingScreenDialog?.show()
+            }
+        })
+    }
+
+
     override fun onStop() {
         super.onStop()
-        loading?.dismiss()
+        showLoading(false)
     }
 
 

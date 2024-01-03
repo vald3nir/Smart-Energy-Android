@@ -1,7 +1,7 @@
 package com.vald3nir.smart_energy.data.repository.remote.sensors
 
-import com.vald3nir.core_repository.firebase.FirebaseDB
-import com.vald3nir.core_repository.firebase.FirebaseDB.parseStringListToObjects
+import com.vald3nir.firebase_helpers.FirebaseDB
+import com.vald3nir.firebase_helpers.extensions.parseStringListToObjects
 import com.vald3nir.smart_energy.data.database.daos.SensorDAO
 import com.vald3nir.smart_energy.data.dtos.ContractDTO
 import com.vald3nir.smart_energy.data.dtos.SensorDTO

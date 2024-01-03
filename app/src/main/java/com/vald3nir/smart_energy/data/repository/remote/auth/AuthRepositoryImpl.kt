@@ -1,15 +1,14 @@
 package com.vald3nir.smart_energy.data.repository.remote.auth
 
 import android.app.Activity
-import com.vald3nir.core_repository.auth.getGoogleUserLogger
-import com.vald3nir.core_repository.auth.googleSignIn
-import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
+import com.vald3nir.auth.google.GoogleSign
+import com.vald3nir.auth.google.GoogleUserDTO
 import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor() : AuthRepository {
 
     override suspend fun authenticateWithGoogle(activity: Activity?) {
-        activity?.googleSignIn()
+        GoogleSign.googleAuthenticate(activity)
     }
 
     override suspend fun loadUserGoogle(
@@ -17,17 +16,10 @@ class AuthRepositoryImpl @Inject constructor() : AuthRepository {
         onSuccess: (user: GoogleUserDTO) -> Unit,
         onError: (() -> Unit)?
     ) {
-        val data = activity?.getGoogleUserLogger()
-        if (data == null) {
-            onError?.invoke()
-        } else {
-            onSuccess.invoke(
-                GoogleUserDTO(
-                    userName = data.displayName,
-                    email = data.email,
-                    profileImageUrl = data.photoUrl.toString()
-                )
-            )
-        }
+        GoogleSign.loadUserGoogle(
+            activity = activity,
+            onSuccess = onSuccess,
+            onError = onError
+        )
     }
 }

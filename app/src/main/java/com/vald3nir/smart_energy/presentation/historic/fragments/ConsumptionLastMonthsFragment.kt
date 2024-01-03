@@ -19,7 +19,7 @@ class ConsumptionLastMonthsFragment : BaseFragment() {
     // ---------------------------------------------------------------------------------------------
 
     private lateinit var binding: FragmentConsumptionBinding
-    private val viewModel: HistoricViewModel by activityViewModels()
+    private val viewModel: HistoricViewModel by activityViewModels<HistoricViewModel>()
 
     // ---------------------------------------------------------------------------------------------
     // ANDROID LIFECYCLE

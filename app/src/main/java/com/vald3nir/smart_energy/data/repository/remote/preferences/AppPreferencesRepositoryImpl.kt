@@ -1,9 +1,10 @@
 package com.vald3nir.smart_energy.data.repository.remote.preferences
 
 import android.content.Context
-import com.vald3nir.core_repository.fromJson
-import com.vald3nir.core_repository.storage.loadDataString
-import com.vald3nir.core_repository.storage.saveDataString
+import com.vald3nir.core.extensions.fromJson
+import com.vald3nir.core.extensions.loadDataString
+import com.vald3nir.core.extensions.saveDataString
+import com.vald3nir.core.extensions.toJson
 import com.vald3nir.smart_energy.data.dtos.AppPreferencesDTO
 import javax.inject.Inject
 

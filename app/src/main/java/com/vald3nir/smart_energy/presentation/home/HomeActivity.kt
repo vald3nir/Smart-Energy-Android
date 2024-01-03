@@ -3,6 +3,7 @@ package com.vald3nir.smart_energy.presentation.home
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import androidx.lifecycle.ViewModelProvider
 import com.vald3nir.smart_energy.databinding.ActivityHomeBinding
 import com.vald3nir.smart_energy.domain.common.view.BaseActivity
 import dagger.hilt.android.AndroidEntryPoint
@@ -14,6 +15,8 @@ class HomeActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val viewModel = ViewModelProvider(this)[HomeViewModel::class.java]
+        setupUIStateObserver(viewModel)
     }
 
 }

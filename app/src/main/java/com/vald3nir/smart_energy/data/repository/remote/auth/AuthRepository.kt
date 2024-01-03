@@ -1,7 +1,7 @@
 package com.vald3nir.smart_energy.data.repository.remote.auth
 
 import android.app.Activity
-import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
+import com.vald3nir.auth.google.GoogleUserDTO
 
 interface AuthRepository {
 

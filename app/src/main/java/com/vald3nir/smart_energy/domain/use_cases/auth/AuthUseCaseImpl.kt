@@ -1,7 +1,7 @@
 package com.vald3nir.smart_energy.domain.use_cases.auth
 
 import android.app.Activity
-import com.vald3nir.smart_energy.data.dtos.GoogleUserDTO
+import com.vald3nir.auth.google.GoogleUserDTO
 import com.vald3nir.smart_energy.data.repository.remote.auth.AuthRepository
 import javax.inject.Inject
 
