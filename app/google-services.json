@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "8984393302",
+    "firebase_url": "https://smart-energy-3e7aa-default-rtdb.firebaseio.com",
+    "project_id": "smart-energy-3e7aa",
+    "storage_bucket": "smart-energy-3e7aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8984393302:android:0dc6273f36c6bfff8d6df7",
+        "android_client_info": {
+          "package_name": "com.vald3nir.my_exams.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8984393302-dnr097rju38m3rae2jqpqoqrmt708bhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAudhr58foOq6d9cgQ_dxAtzkGJwD5yO4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8984393302-dnr097rju38m3rae2jqpqoqrmt708bhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8984393302:android:5da54a6ca12c42298d6df7",
+        "android_client_info": {
+          "package_name": "com.vald3nir.myapplication.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8984393302-dnr097rju38m3rae2jqpqoqrmt708bhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAudhr58foOq6d9cgQ_dxAtzkGJwD5yO4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8984393302-dnr097rju38m3rae2jqpqoqrmt708bhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8984393302:android:5f6666eef7b091af8d6df7",
+        "android_client_info": {
+          "package_name": "com.vald3nir.smart_energy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8984393302-ons5sltpvbp2uisfi6smih35auefn2sm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vald3nir.smart_energy",
+            "certificate_hash": "ea72196cd56deb8e98ad088e2e429e2bcc168916"
+          }
+        },
+        {
+          "client_id": "8984393302-dnr097rju38m3rae2jqpqoqrmt708bhm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAudhr58foOq6d9cgQ_dxAtzkGJwD5yO4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8984393302-dnr097rju38m3rae2jqpqoqrmt708bhm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

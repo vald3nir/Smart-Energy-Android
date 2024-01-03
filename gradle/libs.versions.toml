@@ -1,0 +1,84 @@
+[versions]
+minSdk = "26"
+targetSdk = "33"
+compileSdk = "33"
+versionCode = "1"
+versionName = "1.0.0"
+kotlin = "1.9.0"
+app = "8.1.0"
+core = "1.9.0"
+androidxComposeCompiler = "1.5.0"
+lifecycle = "2.6.1"
+activityCompose = "1.7.2"
+bom = "2023.03.00"
+junit = "4.13.2"
+junit-ext = "1.1.5"
+espresso = "3.5.1"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.9.0"
+navigation = "2.6.0"
+kotlinxCoroutines = "1.6.4"
+hilt = "2.47"
+hiltExt = "1.0.0"
+androidxHiltNavigationCompose = "1.0.0"
+ksp = "1.9.0-1.0.13"
+coil = "2.2.2"
+googleServices = "4.4.0"
+firebaseAppdistributionGradle = "4.0.1"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+lifecycler = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-guava = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-guava", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "bom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-testing = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+
+junit = {group = "junit", name = "junit",version.ref = "junit"}
+junit-ext = {group = "androidx.test.ext",name ="junit",version.ref ="junit-ext"}
+espresso = {group = "androidx.test.espresso", name = "espresso:espresso-core", version.ref = "espresso"}
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "app" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
+
+coil-kt = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
+coil-kt-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+firebase-appdistribution-gradle = { group = "com.google.firebase", name = "firebase-appdistribution-gradle", version.ref = "firebaseAppdistributionGradle" }
+
+[bundles]
+compose = [
+    "compose-ui",
+    "compose-graphics",
+    "compose-preview",
+    "compose-material3",
+    "compose-material-iconsExtended"
+]
+
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+application = { id = "com.android.application", version.ref = "app" }
+library = { id = "com.android.library", version.ref = "app" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
