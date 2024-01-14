@@ -36,4 +36,5 @@ android {
 dependencies {
     // Modules
     implementation(project(":commons"))
+    implementation(project(":features:onboarding"))
 }

@@ -1,4 +1,4 @@
-package com.vald3nir.smart_energy
+package com.vald3nir.smart_energy.presentation
 
 import android.os.Bundle
 import com.vald3nir.commons.databinding.ActivityEmptyBinding

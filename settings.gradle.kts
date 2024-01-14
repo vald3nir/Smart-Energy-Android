@@ -24,7 +24,7 @@ dependencyResolutionManagement {
 rootProject.name = "Smart Energy"
 include(":app")
 include(":commons")
-//include(":features:onboarding")
+include(":features:onboarding")
 include(":toolkit:core")
 //include(":toolkit:auth")
 //include(":toolkit:repository:firebase")

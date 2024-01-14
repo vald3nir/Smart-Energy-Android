@@ -10,11 +10,11 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class OnboardingActivity : BaseActivity() {
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        val binding = ActivityOnboardingBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//    }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        val binding = ActivityOnboardingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+    }
 }
 
 fun Activity.redirectToOnboarding() {
