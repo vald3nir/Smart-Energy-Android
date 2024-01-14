@@ -26,9 +26,7 @@ android {
 //        jvmTarget = "1.8"
 //    }
 }
-
 dependencies {
-    // Modules
-    implementation(project(mapOf("path" to ":toolkit:core")))
-//    implementation(project(":toolkit:core"))
+    api(project(":toolkit:core"))
 }
+
