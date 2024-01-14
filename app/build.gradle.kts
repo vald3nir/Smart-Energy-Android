@@ -7,7 +7,7 @@ plugins {
 
 android {
     compileSdk = 34
-    namespace = "com.vald3nir.myapplication"
+    namespace = "com.vald3nir.smart_energy"
     defaultConfig {
         applicationId = "com.vald3nir.myapplication"
         versionCode = libs.versions.versionCode.get().toInt()
@@ -34,9 +34,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.core.ktx)
-    implementation(libs.lifecycler)
-    implementation(libs.activity)
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.annotation:annotation:1.7.0")
+    implementation(project(":commons"))
+    // Modules
+//    implementation(project(":features:onboarding"))
 }

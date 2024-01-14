@@ -9,7 +9,7 @@ kotlin = "1.9.0"
 app = "8.1.4"
 core = "1.12.0"
 androidxComposeCompiler = "1.5.0"
-lifecycle = "2.6.2"
+lifecycle = "2.7.0"
 activityCompose = "1.8.2"
 bom = "2023.10.01"
 junit = "4.13.2"
@@ -27,6 +27,15 @@ ksp = "1.9.21-1.0.16"
 coil = "2.5.0"
 googleServices = "4.4.0"
 firebaseAppdistributionGradle = "4.0.1"
+constraintlayout = "2.1.4"
+lifecycleLivedataKtx = "2.7.0"
+lifecycleViewmodelKtx = "2.7.0"
+fragmentKtx = "1.6.2"
+activity = "1.8.2"
+
+androidNavigator = "2.7.6"
+safeNavigator = "2.7.3"
+
 
 [libraries]
 
@@ -56,7 +65,6 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", v
 hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
 androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
 
-
 # --------------------------------------------------------------------------------------------------
 # Android X Libs
 # --------------------------------------------------------------------------------------------------
@@ -65,6 +73,13 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
 lifecycler = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+# --------------------------------------------------------------------------------------------------
+# Android Navigator
+# --------------------------------------------------------------------------------------------------
+
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "androidNavigator" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidNavigator" }
 
 # --------------------------------------------------------------------------------------------------
 # Test Libs
@@ -83,7 +98,6 @@ kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-
 kotlinx-coroutines-guava = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-guava", version.ref = "kotlinxCoroutines" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
 
-
 # --------------------------------------------------------------------------------------------------
 # Plugin Libs
 # --------------------------------------------------------------------------------------------------
@@ -94,6 +108,11 @@ coil-kt = { group = "io.coil-kt", name = "coil", version.ref = "coil" }
 coil-kt-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
 firebase-appdistribution-gradle = { group = "com.google.firebase", name = "firebase-appdistribution-gradle", version.ref = "firebaseAppdistributionGradle" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 
 [bundles]
 compose = [
@@ -110,4 +129,5 @@ kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 application = { id = "com.android.application", version.ref = "app" }
 library = { id = "com.android.library", version.ref = "app" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+safeNavigator = { id = "androidx.navigation.safeargs.kotlin", version.ref = "safeNavigator" }
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

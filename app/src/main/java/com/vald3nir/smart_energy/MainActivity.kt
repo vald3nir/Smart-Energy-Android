@@ -1,4 +1,4 @@
-package com.vald3nir.myapplication
+package com.vald3nir.smart_energy
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
