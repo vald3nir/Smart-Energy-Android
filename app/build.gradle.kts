@@ -1,17 +1,17 @@
 plugins {
     id("vald3nir.android.application")
-    id("vald3nir.android.hilt")
+//    id("vald3nir.android.hilt")
     id("com.google.firebase.appdistribution")
     id("com.google.gms.google-services")
 }
 
 android {
-    compileSdk = 34
+//    compileSdk = 34
     namespace = "com.vald3nir.smart_energy"
     defaultConfig {
-        applicationId = "com.vald3nir.myapplication"
-        versionCode = libs.versions.versionCode.get().toInt()
-        versionName = libs.versions.versionName.get()
+        applicationId = "com.vald3nir.smart_energy"
+        versionCode = 1
+        versionName = "1.0.0"
     }
 
     buildTypes {
@@ -34,7 +34,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":commons"))
     // Modules
-//    implementation(project(":features:onboarding"))
+    implementation(project(":commons"))
 }

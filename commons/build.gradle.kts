@@ -1,6 +1,6 @@
 plugins {
-    id("vald3nir.android.feature")
-    alias(libs.plugins.kotlin)
+    id("vald3nir.android.library")
+//    alias(libs.plugins.kotlin)
 }
 
 android {

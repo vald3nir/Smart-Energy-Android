@@ -1,9 +1,7 @@
 [versions]
 minSdk = "26"
-targetSdk = "33"
-compileSdk = "33"
-versionCode = "1"
-versionName = "1.0.0"
+targetSdk = "34"
+compileSdk = "34"
 
 kotlin = "1.9.0"
 app = "8.1.4"
@@ -34,7 +32,7 @@ fragmentKtx = "1.6.2"
 activity = "1.8.2"
 
 androidNavigator = "2.7.6"
-safeNavigator = "2.7.3"
+safeNavigator = "2.7.6"
 
 
 [libraries]
