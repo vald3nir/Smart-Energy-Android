@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#1C1C1D</color>
+    <color name="secondary_color">#d0a849</color>
+    <color name="item_view_background_color">#333333</color>
+    <color name="divider">#4C5156</color>
+    <color name="link">#2196F3</color>
+
+    <color name="listView_item_clicked">#47BDE6</color>
+    <color name="listView_item">#2A3852</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#22F300</color>
+    <color name="green_light">#4CAF50</color>
+    <color name="green_strong">#104212</color>
+    <color name="gray">#5E5C5C</color>
+    <color name="red">#EF1414</color>
+    <color name="blue">#144BEF</color>
+</resources>

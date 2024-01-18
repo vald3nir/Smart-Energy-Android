@@ -31,8 +31,15 @@ lifecycleViewmodelKtx = "2.7.0"
 fragmentKtx = "1.6.2"
 activity = "1.8.2"
 
+# --------------------------------------------------------------------------------------------------
+# Android Navigator
+# --------------------------------------------------------------------------------------------------
 androidNavigator = "2.7.6"
 safeNavigator = "2.7.6"
+# --------------------------------------------------------------------------------------------------
+# Kotlin Serializator
+# --------------------------------------------------------------------------------------------------
+serialization = "1.7.20"
 
 
 [libraries]
@@ -125,7 +132,8 @@ compose = [
 [plugins]
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 application = { id = "com.android.application", version.ref = "app" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 library = { id = "com.android.library", version.ref = "app" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 safeNavigator = { id = "androidx.navigation.safeargs.kotlin", version.ref = "safeNavigator" }
-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization" }

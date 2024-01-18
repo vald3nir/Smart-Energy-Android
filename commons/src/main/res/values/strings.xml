@@ -1,4 +1,94 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">CICI</string>
+
+    <!--  States  -->
     <string name="loading">Carregando</string>
+
+    <!-- Login / Auth   -->
+    <string name="hello">Olá Visitante!</string>
+    <string name="enter">Entrar</string>
+
+    <!-- Dashboard   -->
+    <string name="power_consumed_in_real_time">Potência consumida em Tempo real</string>
+    <string name="instant_power_consumed_">Potência Instantânea Consumida:</string>
+    <string name="environmental_information">Informações Ambientais</string>
+    <string name="consumption_level_">Nível de Consumo:</string>
+    <string name="monthly_average_">Média Mensal:</string>
+    <string name="sensor_">Sensor:</string>
+    <string name="temperature_">Temperatura:</string>
+    <string name="air_humidity_">Umidade do ar:</string>
+    <string name="know_more">Saiba mais</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="real_time_consumption">Consumo em Tempo Real</string>
+    <string name="consumption_level">Nível de consumo</string>
+    <string name="consumption">Consumo</string>
+    <string name="graphic_subtitle">Legenda:</string>
+    <string name="moderate">Moderado</string>
+    <string name="normal">Normal</string>
+    <string name="high">Alto</string>
+    <string name="format_watts_value">%s W</string>
+    <string name="format_temperature_value">%s °C</string>
+    <string name="format_humidity_value">%s %%</string>
+
+    <!-- Historic  -->
+    <string name="consumption_historic">Histórico de consumo</string>
+    <string name="see_historic">Ver histórico de consumo</string>
+    <string name="select_historic">Seleção de histórico</string>
+    <string name="consumption_last_hours">Consumo nas últimas horas</string>
+    <string name="consumption_throughout_day">Consumo ao longo do dia</string>
+    <string name="consumption_last_days">Consumo nos últimos dias</string>
+    <string name="consumption_last_months">Consumo nos últimos meses</string>
+    <string name="consumption_last_years">Consumo nos últimos anos</string>
+    <string name="environment_conditions">Condições ambientais</string>
+    <string name="solar_power_generation">Geração de energia solar</string>
+    <string name="update_database">Atualizar base de dados</string>
+
+
+    <!-- Onboarding  -->
+    <string name="onboarding_input_detail">Para iniciar o app, faça login com sua conta Google</string>
+    <string name="onboarding_alternative_input_detail">Deseja fazer apenas un teste?</string>
+    <string name="onboarding_see_demonstration">Ver demostração</string>
+
+    <!-- Sensors   -->
+    <string name="sensors">Sensores</string>
+
+    <!-- Configuration   -->
+    <string name="configurations">Configurações</string>
+    <string name="compact_view_of_charts">Visão compacta dos gráficos</string>
+
+
+    <!--    Deletar strings-->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="prompt_confirm_password">Confirmar senha</string>
+    <string name="invalid_email">Email não é válido</string>
+    <string name="invalid_password">A Senha deve ser maior que 5 caracteres</string>
+    <string name="passwords_not_equals">As senhas não são iguais</string>
+    <string name="login">Login</string>
+    <string name="register">Cadastrar</string>
+    <string name="save">Salvar</string>
+    <string name="remember_login">Lembrar do login</string>
+    <string name="cancel">Cancelar</string>
+    <string name="options">Opções</string>
+    <string name="update">Atualizar</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="device_settings">Configurações do Dispositivo</string>
+    <string name="devices">Dispositivos</string>
+    <string name="item_menu">item do menu</string>
+    <string name="sensor_management">Gestão de Sensores</string>
+    <string name="edit">Editar</string>
+    <string name="sensor">Sensor</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_auth">AuthActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

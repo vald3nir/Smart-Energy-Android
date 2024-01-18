@@ -1,4 +1,4 @@
-package com.vald3nir.onboarding
+package com.vald3nir.onboarding.presentation
 
 import android.app.Activity
 import android.content.Intent
