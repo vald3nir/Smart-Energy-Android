@@ -1,31 +1,10 @@
-import java.io.FileInputStream
-import java.util.Properties
-
 plugins {
     id("vald3nir.android.application")
     id("com.google.firebase.appdistribution")
     id("com.google.gms.google-services")
 }
 
-val keystorePropertiesFile = rootProject.file("toolkit/auth/keyStore.properties")
-val keystoreProperties = Properties()
-keystoreProperties.load(FileInputStream(keystorePropertiesFile))
-
 android {
-    signingConfigs {
-        getByName("debug") {
-            keyAlias = keystoreProperties.getProperty("keyAlias")
-            keyPassword = keystoreProperties.getProperty("keyPassword")
-            storeFile = file(keystoreProperties.getProperty("storeFile"))
-            storePassword = keystoreProperties.getProperty("storePassword")
-        }
-        create("release") {
-            keyAlias = keystoreProperties.getProperty("keyAlias")
-            keyPassword = keystoreProperties.getProperty("keyPassword")
-            storeFile = file(keystoreProperties.getProperty("storeFile"))
-            storePassword = keystoreProperties.getProperty("storePassword")
-        }
-    }
     namespace = "com.vald3nir.smart_energy"
     defaultConfig {
         applicationId = "com.vald3nir.smart_energy"
