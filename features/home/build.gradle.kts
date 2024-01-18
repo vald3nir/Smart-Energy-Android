@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.vald3nir.onboarding"
+    namespace = "com.vald3nir.home"
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

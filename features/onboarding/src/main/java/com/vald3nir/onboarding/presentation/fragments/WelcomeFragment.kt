@@ -34,12 +34,6 @@ class WelcomeFragment : BaseFragment(R.layout.fragment_welcome) {
     }
 
     private fun loadUserGoogle() {
-        viewModel.loadUserGoogle(
-            activity = activity,
-            onError = { showLoading(false) },
-            onSuccess = {
-
-            }
-        )
+        viewModel.loadUserGoogle(activity)
     }
 }
